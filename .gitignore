@@ -1,5 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# README drafts / notes
+readme/
+notes/
+drafts/
+
 # dependencies
 /node_modules
 /.pnp
@@ -22,7 +27,12 @@
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
+
+# logs
+logs
+*.log
 
 # debug
 npm-debug.log*
@@ -30,12 +40,37 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files
 .env*
+!.env.example
 
 # vercel
 .vercel
 
-# typescript
+# cloudflare
+.wrangler
+
+# turbo
+.turbo
+
+# IDE/editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# local db
+*.sqlite
+
+# temp files
+tmp/
+temp/
+
+# uploads
+uploads/
+
+# OS files
+desktop.ini
